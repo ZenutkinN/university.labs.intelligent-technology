@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/hierarchy-analysis/static/css/main.06699aa6.chunk.css",
-    "main.js": "/hierarchy-analysis/static/js/main.1c7010c3.chunk.js",
-    "main.js.map": "/hierarchy-analysis/static/js/main.1c7010c3.chunk.js.map",
-    "runtime-main.js": "/hierarchy-analysis/static/js/runtime-main.39aee205.js",
-    "runtime-main.js.map": "/hierarchy-analysis/static/js/runtime-main.39aee205.js.map",
-    "static/js/2.edcc7fcd.chunk.js": "/hierarchy-analysis/static/js/2.edcc7fcd.chunk.js",
-    "static/js/2.edcc7fcd.chunk.js.map": "/hierarchy-analysis/static/js/2.edcc7fcd.chunk.js.map",
-    "index.html": "/hierarchy-analysis/index.html",
-    "precache-manifest.83d23ea8f8d4cb980823d5c8833ea146.js": "/hierarchy-analysis/precache-manifest.83d23ea8f8d4cb980823d5c8833ea146.js",
-    "service-worker.js": "/hierarchy-analysis/service-worker.js",
-    "static/css/main.06699aa6.chunk.css.map": "/hierarchy-analysis/static/css/main.06699aa6.chunk.css.map",
-    "static/js/2.edcc7fcd.chunk.js.LICENSE": "/hierarchy-analysis/static/js/2.edcc7fcd.chunk.js.LICENSE"
+    "main.css": "/university.labs.intelligent-technology/static/css/main.06699aa6.chunk.css",
+    "main.js": "/university.labs.intelligent-technology/static/js/main.1c7010c3.chunk.js",
+    "main.js.map": "/university.labs.intelligent-technology/static/js/main.1c7010c3.chunk.js.map",
+    "runtime-main.js": "/university.labs.intelligent-technology/static/js/runtime-main.c6010263.js",
+    "runtime-main.js.map": "/university.labs.intelligent-technology/static/js/runtime-main.c6010263.js.map",
+    "static/js/2.edcc7fcd.chunk.js": "/university.labs.intelligent-technology/static/js/2.edcc7fcd.chunk.js",
+    "static/js/2.edcc7fcd.chunk.js.map": "/university.labs.intelligent-technology/static/js/2.edcc7fcd.chunk.js.map",
+    "index.html": "/university.labs.intelligent-technology/index.html",
+    "precache-manifest.7be3b17cbc0883f43688129395e281d3.js": "/university.labs.intelligent-technology/precache-manifest.7be3b17cbc0883f43688129395e281d3.js",
+    "service-worker.js": "/university.labs.intelligent-technology/service-worker.js",
+    "static/css/main.06699aa6.chunk.css.map": "/university.labs.intelligent-technology/static/css/main.06699aa6.chunk.css.map",
+    "static/js/2.edcc7fcd.chunk.js.LICENSE": "/university.labs.intelligent-technology/static/js/2.edcc7fcd.chunk.js.LICENSE"
   },
   "entrypoints": [
-    "static/js/runtime-main.39aee205.js",
+    "static/js/runtime-main.c6010263.js",
     "static/js/2.edcc7fcd.chunk.js",
     "static/css/main.06699aa6.chunk.css",
     "static/js/main.1c7010c3.chunk.js"
