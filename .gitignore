@@ -1,0 +1,6 @@
+node_modules
+
+build
+reports
+lab-*
+!lab-6.hierarchy-analysis

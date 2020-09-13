@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+.buttonStyle, #startSection div button, #matrixSection #calcSection button, #calcMatrixSection #calcSection button {
+  padding: 10px 15px;
+  outline: none;
+  border: 3px solid #005070;
+  background: transparent;
+  color: #005070;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.textStyle, #startSection div p, #matrixSection .matrixArea p, #matrixSection .calcMatrixArea p, #calcMatrixSection .matrixArea p, #calcMatrixSection .calcMatrixArea p, #matrixSection #calcSection p, #calcMatrixSection #calcSection p, #resultTableSection .resultTableArea p {
+  color: #005070;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.tableStyle, #matrixSection .matrixArea table, #matrixSection .calcMatrixArea table, #calcMatrixSection .matrixArea table, #calcMatrixSection .calcMatrixArea table {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  color: #005070;
+  border-spacing: 5px;
+}
+
+.tableStyle tr:not(:first-child) td:not(:first-child), #matrixSection .matrixArea table tr:not(:first-child) td:not(:first-child), #matrixSection .calcMatrixArea table tr:not(:first-child) td:not(:first-child), #calcMatrixSection .matrixArea table tr:not(:first-child) td:not(:first-child), #calcMatrixSection .calcMatrixArea table tr:not(:first-child) td:not(:first-child) {
+  background: white;
+  min-width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.tableStyle tr:not(:first-child) td:not(:first-child) input, #matrixSection .matrixArea table tr:not(:first-child) td:not(:first-child) input, #matrixSection .calcMatrixArea table tr:not(:first-child) td:not(:first-child) input, #calcMatrixSection .matrixArea table tr:not(:first-child) td:not(:first-child) input, #calcMatrixSection .calcMatrixArea table tr:not(:first-child) td:not(:first-child) input {
+  border: none;
+  width: 30px;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #005070;
+  border-radius: 5px;
+  outline-color: yellowgreen;
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.currentMatrix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #005070;
+  font-style: "Roboto", sans-serif;
+  font-size: 5rem;
+  font-weight: 900;
+  margin-left: 20px;
+}
+
+.currentMatrix div {
+  cursor: pointer;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.currentMatrix div:nth-child(1) {
+  margin-right: 15px;
+}
+
+.currentMatrix div:nth-child(2) {
+  margin-left: 15px;
+}
+
+#startSection {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #00AEF2;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+#startSection div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#startSection div input {
+  outline: none;
+  width: 100px;
+  height: 30px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  color: #005070;
+  padding-left: 10px;
+  margin-bottom: 30px;
+  border: 3px solid transparent;
+}
+
+#startSection div input:focus {
+  border-color: #005070;
+}
+
+#matrixSection, #calcMatrixSection {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100vh;
+  background: #FFCCCB;
+}
+
+#matrixSection .matrixArea, #matrixSection .calcMatrixArea, #calcMatrixSection .matrixArea, #calcMatrixSection .calcMatrixArea {
+  width: 50%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#matrixSection .matrixArea p, #matrixSection .calcMatrixArea p, #calcMatrixSection .matrixArea p, #calcMatrixSection .calcMatrixArea p {
+  margin-left: 20px;
+}
+
+#matrixSection #calcSection, #calcMatrixSection #calcSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 20%;
+}
+
+#matrixSection #calcSection button, #calcMatrixSection #calcSection button {
+  margin-right: 20px;
+}
+
+#matrixSection #calcSection p, #calcMatrixSection #calcSection p {
+  margin-left: 20px;
+}
+
+#calcMatrixSection {
+  background: #91D4D6;
+}
+
+#calcMatrixSection .calcMatrixArea {
+  height: 100%;
+}
+
+#resultTableSection {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100vh;
+  background: #BE8281;
+}
+
+#resultTableSection .resultTableArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#resultTableSection .resultTableArea table {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  color: #005070;
+  border-spacing: 5px;
+}
+
+#resultTableSection .resultTableArea table tr td {
+  background: white;
+  border-radius: 5px;
+  min-width: 30px;
+  height: 30px;
+  padding: 5px;
+}
+/*# sourceMappingURL=index.css.map */

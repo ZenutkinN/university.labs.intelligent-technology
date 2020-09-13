@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic');
+
+$baseFont: 'Roboto', sans-serif;
+
+$startSectionColor: #00AEF2;
+$matrixSectionColor: #FFCCCB;
+$calcMatrixSectionColor: #91D4D6;
+$resultTableSectionColor: #BE8281;
+$buttonColor: #00AEF2;
+$textColor: #005070;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+.buttonStyle {
+    padding: 10px 15px;
+    outline: none;
+    border: 3px solid $textColor;
+    background: transparent;
+    color: $textColor;
+    font-family: $baseFont;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.textStyle{
+    color: $textColor;
+    font-family: $baseFont;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.tableStyle{
+    text-align: center;
+    font-family: $baseFont;
+    font-size: 1.6rem;
+    color: $textColor;
+    border-spacing: 5px;
+    tr:not(:first-child()) {
+        td:not(:first-child()) {
+            background: white;
+            min-width: 30px;
+            height: 30px;
+            border-radius: 5px;
+            padding: 3px;
+            input {
+                border: none;
+                width: 30px;
+                height: 100%;
+                font-family: $baseFont;
+                text-align: center;
+                font-size: 1.6rem;
+                color: $textColor;
+                border-radius: 5px;
+                outline-color: yellowgreen;
+            }
+        }
+    }
+}
+
+.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.currentMatrix {
+    display: flex;
+    color: $textColor;
+    font-style: $baseFont;
+    font-size: 5rem;
+    font-weight: 900;
+    margin-left: 20px;
+    div {
+        cursor: pointer;
+        height: max-content;
+        &:nth-child(1) {
+            margin-right: 15px;
+        }
+        &:nth-child(2) {
+            margin-left: 15px;
+        }
+    }
+}
+
+#startSection {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: $startSectionColor;
+    transition: .5s ease;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            @extend .textStyle;
+        }
+        
+        input {
+            outline: none;
+            width: 100px;
+            height: 30px;
+            border: none;
+            font-family: $baseFont;
+            font-size: 1.6rem;
+            color: $textColor;
+            padding-left: 10px;
+            margin-bottom: 30px;
+            border: 3px solid transparent;
+            &:focus {
+                border-color: $textColor;
+            }
+        }
+
+        button {
+            @extend .buttonStyle;
+        }
+    }
+}
+
+#matrixSection, #calcMatrixSection {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    background: $matrixSectionColor;
+
+    .matrixArea, .calcMatrixArea {
+        width: 50%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            @extend .textStyle;
+            margin-left: 20px;
+        }
+
+        table {
+            @extend .tableStyle;
+        }
+    }
+
+    #calcSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 20%;
+
+        button {
+            @extend .buttonStyle;
+            margin-right: 20px;
+        }
+
+        p {
+            @extend .textStyle;
+            margin-left: 20px;
+        }
+    }
+}
+
+
+#calcMatrixSection {
+    background: $calcMatrixSectionColor;
+    .calcMatrixArea {
+        height: 100%;
+    }
+}
+
+#resultTableSection {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    background: $resultTableSectionColor;
+
+    .resultTableArea {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        p {
+            @extend .textStyle;
+        }
+
+        table {
+            text-align: center;
+            font-family: $baseFont;
+            font-size: 1.6rem;
+            color: $textColor;
+            border-spacing: 5px;
+
+            tr {
+                td {
+                    background: white;
+                    border-radius: 5px;
+                    min-width: 30px;
+                    height: 30px;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+
+
